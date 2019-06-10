@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Customer Satisfaction Survey Form</title> 
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="A survey form used by an enterprise to get the satisfaction level of customers">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+      <main>
+        <div class="container">
+          <header>
+            <div id="text">
+              <h1 id="title">Customer Satifsfaction Survey Form</h1>
+              <p id="description">To improve our services, please take a few minutes to answer a few questions.</p>
+            </div>
+          </header>
+          
+          <div id="container-form">
+            <h2>Tell us everything</h2>
+            <form id="survey-form" action="post">
+              <div class="row">
+                  <label id="name-label" for="name">Name</label>
+                  <input type="text" id="name" placeholder="Enter your name" name="name" autofocus required>
+              </div>
+              <div class="row">
+                  <label for="email" id="email-label"> Email</label>
+                  <input type="email" id="email" placeholder="Enter your email" name="email" required>
+              </div>
+              <div class="row">
+                  <label for="number" id="number-label">Age</label>
+                  <input type="number" id="number" placeholder="Enter your age" name="age" min="1" max="125" required>
+              </div>
+              <div class="row">
+                <label for="travel-type">What was your type of trip ?</label>
+                <select name="travel-type" id="dropdown">
+                  <option disabled value>Select an option</option>
+                  <option value="business">Business</option>
+                  <option value="couple">Couple</option>
+                  <option value="family">Family</option>
+                  <option value="friends">Friends</option>
+                  <option value="solo">Solo</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="row">
+                  <label for="userRatings">Rate your travel</label>
+                <div class="form-check">
+                  <ul>
+                    <li class="radio"><label for="excellent">Excellent<input name="radio-buttons" id="excellent" value="1" type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label for="very-good">Very good<input name="radio-buttons" id="very-good" value="2" type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label for="average">Average<input name="radio-buttons" id="average" value="3" type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label for="poor">Poor<input name="radio-buttons" id="poor" value="4" type="radio" class="userRatings" ></label></li>
+                    <li class="radio"><label for="terrible">Terrible<input name="radio-buttons" id="terrible" value="5" type="radio" class="userRatings" ></label></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                  <label for="liked">Things you liked</label>
+                <div class="form-check">
+                  <ul>
+                    <li><label for="services"><input type="checkbox" name="prefer" id="services" value="1" class="liked">Services</label></li>
+                    <li><label for="hotel"><input type="checkbox" name="prefer" id="hotel" value="2" class="liked">Hotel</label></li>
+                    <li><label for="facilities"><input type="checkbox" name="prefer" id="facilities" value="3" class="liked">Facilities</label></li>
+                    <li><label for="place"><input type="checkbox" name="prefer" id="place" value="4" class="liked">Place</label></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <label for="suggestions">Suggestions</label>
+                <textarea name="suggestions" id="suggestions" placeholder="Enter your suggestions..." rows="10"></textarea>
+              </div>
+              <div class="row">
+                <button type="submit" id="submit">Submit your answers</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+
+      </main>
+    </body>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
